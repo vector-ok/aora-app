@@ -8,7 +8,8 @@ import ExpoStatusBar from 'expo-status-bar/build/ExpoStatusBar';
 
 export default function App() {
   return (
-    <SafeAreaView className="bg-cyan-700 h-full">
+    <SafeAreaView className="bg-primary h-full">
+      {/* <SafeAreaView className="bg-cyan-700 h-full"> */}
       <ScrollView contentContailnerStyle={{ height: '100%' }}>
         <View className="items-center justify-center w-full min-h-[85vh] px-4">
           <Image
