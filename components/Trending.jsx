@@ -4,6 +4,7 @@ import React from 'react';
 const Trending = ({ posts }) => {
   return (
     <FlatList
+      key={(item) => item.$id}
       data={posts}
       keyExtractor={(item) => item.$id}
       renderItem={({ item }) => (
