@@ -5,8 +5,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from '../constants';
 import CustomButton from '../components/CustomButton';
 import ExpoStatusBar from 'expo-status-bar/build/ExpoStatusBar';
+import { useGlobalContext } from '../context/GlobalProvider';
 
 export default function App() {
+  const { isLoading, isLoggedIn } = useGlobalContext();
+  if (!isLoading && isLoggedIn) <Redirect to="/home" />;
+
   return (
     <SafeAreaView className="bg-primary h-full">
       {/* <SafeAreaView className="bg-cyan-700 h-full"> */}

@@ -4,7 +4,7 @@ import React from 'react';
 const Bookmark = () => {
   return (
     <View>
-      <Text>Bookmark</Text>
+      <Text>This is a placeholder. Bookmark screen not built yet!</Text>
     </View>
   );
 };

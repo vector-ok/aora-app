@@ -4,7 +4,7 @@ import React from 'react';
 const Create = () => {
   return (
     <View>
-      <Text>Create</Text>
+      <Text>This is a placeholder. Create is not implemented yed</Text>
     </View>
   );
 };
